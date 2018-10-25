@@ -18,10 +18,10 @@ h6 {
   font-weight: 700;
 }
 
-header.masthead {
+/* header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/chrisnmarilyn.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -39,7 +39,51 @@ header.masthead .overlay {
 
 header.masthead h1 {
   font-size: 2rem;
+} */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  /* animation-delay: 3s; */
+  animation-duration: 3s;
 }
+
+.navbar-brand img {
+  max-height: 50px;
+  width: auto;
+}
+
+#hamburger {
+  display: none;
+  font-family: 'Oswald', sans-serif;
+  max-height: 50px;
+  width: 100%;
+  z-index: 1;
+  top: 20;
+  left: 80%;
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+
+  #horizontalNavBar {
+      display: none;
+  }
+
+  main {
+    margin-left: 0px;
+  }
+}
+
+main {
+  margin-top: 75px;
+}
+
 
 @media (min-width: 768px) {
   header.masthead {
@@ -51,18 +95,49 @@ header.masthead h1 {
   }
 }
 
+#horizontalNavBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#horizontalNavBar li {
+    float: left;
+}
+
+#horizontalNavBar li a {
+    display: block;
+    padding: 8px;
+    color: grey;
+    text-decoration: none;
+}
+
+#toppic {
+ animation-duration: 3s;
+ transition-timing-function: ease-in-out;
+}
+
 .showcase .showcase-text {
-  padding: 3rem;
+  color: #818284;
+  padding: 1rem;
 }
 
 .showcase .showcase-img {
-  min-height: 30rem;
   background-size: cover;
+  min-height: 400px;
 }
 
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .showcase .showcase-img {
+    max-width: 100%;
+    min-height: 200px;
   }
 }
 
@@ -105,7 +180,7 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
+  background: url("../img/chrisnmarilyn.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -119,6 +194,10 @@ header.masthead h1 {
   top: 0;
   left: 0;
   opacity: 0.3;
+}
+
+.support-button {
+  margin: 20px;
 }
 
 footer.footer {
