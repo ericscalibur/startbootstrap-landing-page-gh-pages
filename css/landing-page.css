@@ -125,6 +125,7 @@ main {
 
 .showcase .showcase-img {
   background-size: cover;
+  background-position: center;
   min-height: 400px;
 }
 
